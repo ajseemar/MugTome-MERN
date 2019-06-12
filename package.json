@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A pixel perfect clone of Facebook built using MERN stack",
   "main": "app.js",
+  "scripts": {
+    "server": "nodemon app.js"
+  },
   "repository": "https://github.com/ajseemar/MugTome-MERN",
   "author": "Ajay Seemar",
   "license": "MIT",
