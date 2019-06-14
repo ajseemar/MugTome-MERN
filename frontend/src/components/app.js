@@ -5,6 +5,8 @@ import { Switch } from 'react-router-dom';
 import Splash from './main/splash';
 import HomeContainer from './main/homeContainer';
 
+import './app.scss';
+
 const App = (props) => (
     <Switch>
         <AuthRoute exact path="/" component={Splash} />
