@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-
+import { withRouter } from 'react-router-dom';
 import { login } from '../../actions/sessionActions';
 import SessionForm from './sessionForm';
 
@@ -12,4 +12,4 @@ const mdp = dispatch => ({
     processForm: (user) => dispatch(login(user))
 });
 
-export default connect(msp, mdp)(SessionForm);
+export default withRouter(connect(msp, mdp)(SessionForm));

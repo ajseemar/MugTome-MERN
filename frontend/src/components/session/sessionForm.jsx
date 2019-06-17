@@ -35,13 +35,14 @@ class SessionForm extends React.Component {
         this.props.processForm(this.state);
         this.populateState();
     }
-
+    
     demoLogin(e) {
         e.preventDefault();
         this.props.processForm({
             email: 'email3@domain.com',
             password: 'password'
-        })
+        });
+        this.props.history.push('/home');
     }
 
     renderErrors() {

@@ -10,7 +10,7 @@ import './app.scss';
 const App = (props) => (
     <Switch>
         <AuthRoute exact path="/" component={Splash} />
-        <ProtectedRoute exact path="/home" component={HomeContainer} loggedIn={props.isAuthenticated} />
+        <ProtectedRoute exact path="/home" component={HomeContainer}  />
     </Switch>
 );
 
